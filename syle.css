@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    
+}
+/*-------------------------------------formula--------------------------*/
+.formulae_container{
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.address_box{
+    width: 15%;
+}
+.formula_box
+{
+    width: 85%;
+}
+.seperator
+{
+    width: 5%;
+}
+
+
+
+
+/*-------------------------------------sheet--------------------------*/
+
+
+
+
+.sheets
+{
+    height: 40px;
+    display: flex;
+    background-color: lightgreen;
+    overflow: auto;
+}
+.add_sheet_container
+{
+    height: 100%;
+    min-width: 40px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon
+{
+    font-size: 1.7rem;
+    color: lime;
+    
+}
+.sheet_list
+{
+    display: flex;
+    height: 100%;
+    min-width: 100vw;
+    overflow-x: auto;
+
+}
+.sheet_list::-webkit-scrollbar{
+    display: none;
+}
+.sheet_list
+{
+    -ms-overflow-style: none;
+    scrollbar-width:none ;
+}
+.sheet
+{
+    min-width: 60px;
+    height: 100%;
+    display: flex;
+    
+}
+.active_sheet
+{
+    background-color: wheat;
+}
+/*--------------------grid container---------------------------------------------------------*/
+.top-left-block{
+    height: 30px;
+    width: 25px;
+    background-color: gray;
+}
+
+.top-row{
+    height: 30px;
+    background-color: lightgreen;
+    display: flex;
+    position: absolute;
+    top:0px;
+    left:25px;
+}
+
+.row{
+    display:flex;
+}
+.col{
+    min-width:80px;
+    border: 1px solid;
+    min-height: 30px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    font-style: normal;
+}
+
+.left-col{
+    width:25px;
+}
+.left-col_box{
+    height:30px;
+    background-color: lightgreen;
+    text-align: center;
+    border: 1px solid;
+}
+.grid_container{
+    height: calc(100vh - (80px + 30px + 40px));
+
+    overflow: auto;
+    position:relative;
+}
+.grid{
+    position: absolute;
+    top:30px;
+    left:25px;
+}
+/*---------------menu-----------------------------------------------------------------------*/
+.menu_container
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    
+}
+.menu_container>*{
+    height: 80%;
+    width: 20%;
+    border-right: 2px solid;
+    
+}
+.allignment_container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.allignment_container>*
+{
+    width: 20%;
+}
+.formatting_container
+{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.subgroup
+{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.subgroup>*
+{
+    width: 100%;
+}
+.font_family_container>*
+{
+    width: 100%;
+}
+.bui_container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bui_container>*
+{
+    width: 30%;
+}
+.font_size_container
+{
+    width: 100%;
+}
+.font_size_container>*
+{
+    width: 100%;
+}
+.color_container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.color_container>*
+{
+    width: 48%;
+}
